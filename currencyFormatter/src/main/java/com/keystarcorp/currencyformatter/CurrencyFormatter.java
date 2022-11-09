@@ -18,25 +18,17 @@ public class CurrencyFormatter {
 
     private int currencyDisplay;
 
-    int getCurrencyDisplay() {
+    public int getCurrencyDisplay() {
         return currencyDisplay;
     }
 
-    private CurrencyFormatter(int currencyDisplay) {
-        // Initialize your Library here
+    public void setCurrencyDisplay(int currencyDisplay) {
+        this.currencyDisplay = currencyDisplay;
     }
 
-    public class CurrencyBuilder {
-        private int currencyDisplay;
-
-        public CurrencyBuilder setCurrencyDisplay(int currencyDisplay) {
-            this.currencyDisplay = currencyDisplay;
-            return this;
-        }
-
-        public CurrencyFormatter build() {
-            return new CurrencyFormatter(currencyDisplay);
-        }
+    public CurrencyFormatter(int currencyDisplay) {
+        // Initialize your Library here
+        this.currencyDisplay = currencyDisplay;
     }
 
     public String formatBasedOnUserPreference(double amount, Currency currency, boolean... isExchangeFlow) {
