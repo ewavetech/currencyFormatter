@@ -26,7 +26,7 @@ public class CurrencyFormatter {
         // Initialize your Library here
     }
 
-    class CurrencyBuilder {
+    public class CurrencyBuilder {
         private int currencyDisplay;
 
         public CurrencyBuilder setCurrencyDisplay(int currencyDisplay) {
